@@ -61,3 +61,13 @@ nav li a{
 nav li a i{
     margin-left: 10px;
 }
+
+
+/* responsive area  */
+
+@media screen and (max-width: 566px) {
+    nav, nav > ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
