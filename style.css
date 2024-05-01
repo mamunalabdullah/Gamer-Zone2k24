@@ -16,7 +16,7 @@ img{
     height: auto;
 }
 
-nav{
+nav, .banner-top{
     width: 80%;
     margin: 0 auto;
 }
@@ -62,6 +62,58 @@ nav li a i{
     margin-left: 10px;
 }
 
+/* banner area styles  */
+.banner{
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+}
+.banner-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.banner-subtitle{
+    font-size: 48px;
+    font-weight: 600;
+    color: #0B0223;
+}
+.banner-title{
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-top ul{
+    margin: 20px 0;
+}
+.banner-top li{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #534C64;
+    font-weight: 500;
+}
+.primary-btn{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    background-color: #F948B2;
+    border: 0;
+    border-radius: 30px;
+    margin: 20px 20px 0 0;
+}
+.secondary-btn{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    background-color: #4EC5F7;
+    border: 0;
+    border-radius: 30px;
+}
+
 
 /* responsive area  */
 
@@ -69,5 +121,17 @@ nav li a i{
     nav, nav > ul{
         flex-direction: column;
         margin-top: 20px;
+    }
+    .banner{
+        background-image: none;
+    }
+    .banner-top{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .banner-content{
+        background-image: url('images/Group\ 14.png');
+        text-align: center;
+        padding: 20px;
     }
 }
