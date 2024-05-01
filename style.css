@@ -16,10 +16,21 @@ img{
     height: auto;
 }
 
-nav, .banner-top{
+/* common area styles  */
+
+nav, .banner-top, .banner-bottom{
     width: 80%;
     margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
 /* header area */
 header{
     background-color: #FFFFFF;
@@ -73,12 +84,12 @@ nav li a i{
     align-items: center;
     gap: 20px;
 }
-.banner-subtitle{
+.banner-top-subtitle{
     font-size: 48px;
     font-weight: 600;
     color: #0B0223;
 }
-.banner-title{
+.banner-top-title{
     font-size: 95px;
     font-weight: 800;
     background: linear-gradient(to bottom, #F948B2, #8758F1);
@@ -102,7 +113,7 @@ nav li a i{
     background-color: #F948B2;
     border: 0;
     border-radius: 30px;
-    margin: 20px 20px 0 0;
+    margin: 20px 0;
 }
 .secondary-btn{
     color: #ffffff;
@@ -112,6 +123,40 @@ nav li a i{
     background-color: #4EC5F7;
     border: 0;
     border-radius: 30px;
+    margin-left: 20px;
+}
+
+.banner-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.banner-bottom-content{
+    width: 50%;
+    text-align: end;
+}
+.banner-bottom-title{
+    font-size: 48px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-bottom-description{
+    color: #534C64;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.banner-bottom-motto{
+    font-size: 24px;
+    color: #534C64;
+}
+.banner-bottom-motto-title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #534C64;
 }
 
 
@@ -129,9 +174,16 @@ nav li a i{
         flex-direction: column-reverse;
         gap: 50px;
     }
-    .banner-content{
+    .banner-top-content{
         background-image: url('images/Group\ 14.png');
         text-align: center;
         padding: 20px;
+    }
+    .banner-bottom{
+        flex-direction: column;
+    }
+    .banner-bottom-content{
+        width: 100%;
+        text-align: center;
     }
 }
