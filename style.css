@@ -213,11 +213,17 @@ nav li a i{
         text-align: center;
         padding: 20px;
     }
-    .banner-bottom, .online-images{
+    .banner-bottom, .online-images, .instant{
         flex-direction: column;
     }
-    .banner-bottom-content, .online{
+    .banner-bottom-content, .online, .instant-content{
         width: 100%;
         text-align: center;
+    }
+    .instant-image{
+        width: 100%;
+    }
+    .badge{
+        width: 50%;
     }
 }
