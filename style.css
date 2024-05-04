@@ -18,7 +18,7 @@ img{
 
 /* common area styles  */
 
-nav, .banner-top, .banner-bottom, .online, .instant{
+nav, .banner-top, .banner-bottom, .online, .instant, .anytime{
     width: 80%;
     margin: 0 auto;
 }
@@ -172,8 +172,8 @@ nav li a i{
     padding: 15px;
 }
 
-/* instant area styles  */
-.instant{
+/* instant area styles and anytime area  */
+.instant, .anytime{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,7 +182,7 @@ nav li a i{
     width: 30%;
     text-align: end;
 }
-.instant-image{
+.instant-image, .anytime-image{
     width: 40%;
     position: relative;
 
@@ -191,6 +191,14 @@ nav li a i{
     position: absolute;
     left: -20%;
     bottom: -20%;
+}
+.anytime{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.anytime-content{
+    width: 30%;
+    text-align: start;
 }
 
 
@@ -216,11 +224,14 @@ nav li a i{
     .banner-bottom, .online-images, .instant{
         flex-direction: column;
     }
-    .banner-bottom-content, .online, .instant-content{
+    .anytime{
+        flex-direction: column-reverse;
+    }
+    .banner-bottom-content, .online, .instant-content, .anytime-content{
         width: 100%;
         text-align: center;
     }
-    .instant-image{
+    .instant-image, .anytime-image{
         width: 100%;
     }
     .badge{
