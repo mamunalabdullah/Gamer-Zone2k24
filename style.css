@@ -18,7 +18,7 @@ img{
 
 /* common area styles  */
 
-nav, .banner-top, .banner-bottom, .online, .instant, .anytime{
+nav, .banner-top, .banner-bottom, .online, .instant, .anytime, .careers{
     width: 80%;
     margin: 0 auto;
 }
@@ -187,6 +187,9 @@ nav li a i{
     position: relative;
 
 }
+.anytime-image img{
+    margin-left: 50px;
+}
 .badge{
     position: absolute;
     left: -20%;
@@ -197,10 +200,40 @@ nav li a i{
     margin-bottom: 150px;
 }
 .anytime-content{
-    width: 30%;
+    width: 40%;
     text-align: start;
 }
 
+/* careers area styles  */
+.careers-area{
+    background-color: #FF42A5;
+}
+.careers{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.careers-content, .careers-image{
+    width: 50%;
+}
+.career-title, .career-description{
+    color: #FFFFFF;
+}
+.placement{
+    display: flex;
+    justify-content: space-between;
+}
+.placement li a{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.place{
+    text-align: end;
+}
+.third-btn{
+    background-color: #fff;
+    color: #FF42A5;
+}
 
 /* responsive area  */
 
@@ -237,4 +270,12 @@ nav li a i{
     .badge{
         width: 50%;
     }
+    .careers{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .careers-content, .careers-image{
+        width: 100%;
+    }
+
 }
