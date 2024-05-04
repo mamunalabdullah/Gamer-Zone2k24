@@ -18,7 +18,7 @@ img{
 
 /* common area styles  */
 
-nav, .banner-top, .banner-bottom, .online, .instant, .anytime, .careers{
+nav, .banner-top, .banner-bottom, .online, .instant, .anytime, .careers, .types{
     width: 80%;
     margin: 0 auto;
 }
@@ -187,8 +187,8 @@ nav li a i{
     position: relative;
 
 }
-.anytime-image img{
-    margin-left: 50px;
+.anytime-image img, .instant-image img{
+    margin-left: 30px;
 }
 .badge{
     position: absolute;
@@ -230,9 +230,29 @@ nav li a i{
 .place{
     text-align: end;
 }
-.third-btn{
+.career-btn{
     background-color: #fff;
     color: #FF42A5;
+}
+
+/* types area styles  */
+.types{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.btn-type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 50px;
+
 }
 
 /* responsive area  */
