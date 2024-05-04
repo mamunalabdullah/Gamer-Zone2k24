@@ -18,7 +18,7 @@ img{
 
 /* common area styles  */
 
-nav, .banner-top, .banner-bottom{
+nav, .banner-top, .banner-bottom, .online{
     width: 80%;
     margin: 0 auto;
 }
@@ -129,11 +129,11 @@ nav li a i{
     width: 50%;
     text-align: end;
 }
-.banner-bottom-title{
+.banner-bottom-title, .title{
     font-size: 48px;
     font-weight: 700;
 }
-.banner-bottom-description{
+.description{
     color: #534C64;
     font-size: 18px;
     margin: 20px 0;
@@ -148,6 +148,29 @@ nav li a i{
     color: #534C64;
 }
 
+/* online area styles  */
+.online{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.online-content{
+    text-align: center;
+}
+.online-images{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+.online-image{
+    width: 390px;
+}
+.image-description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+}
 
 /* responsive area  */
 
@@ -168,10 +191,10 @@ nav li a i{
         text-align: center;
         padding: 20px;
     }
-    .banner-bottom{
+    .banner-bottom, .online-images{
         flex-direction: column;
     }
-    .banner-bottom-content{
+    .banner-bottom-content, .online{
         width: 100%;
         text-align: center;
     }
