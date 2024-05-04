@@ -18,7 +18,7 @@ img{
 
 /* common area styles  */
 
-nav, .banner-top, .banner-bottom, .online{
+nav, .banner-top, .banner-bottom, .online, .instant{
     width: 80%;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ nav, .banner-top, .banner-bottom{
     justify-content: space-between;
     align-items: center;
 }
-.banner-top-title, .banner-bottom-title{
+.banner-top-title, .gradiant{
     background: linear-gradient(to bottom, #F948B2, #8758F1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -129,7 +129,7 @@ nav li a i{
     width: 50%;
     text-align: end;
 }
-.banner-bottom-title, .title{
+.title{
     font-size: 48px;
     font-weight: 700;
 }
@@ -160,7 +160,7 @@ nav li a i{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .online-image{
     width: 390px;
@@ -171,6 +171,28 @@ nav li a i{
     font-weight: 500;
     padding: 15px;
 }
+
+/* instant area styles  */
+.instant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.instant-content{
+    width: 30%;
+    text-align: end;
+}
+.instant-image{
+    width: 40%;
+    position: relative;
+
+}
+.badge{
+    position: absolute;
+    left: -20%;
+    bottom: -20%;
+}
+
 
 /* responsive area  */
 
