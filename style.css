@@ -285,7 +285,7 @@ footer{
 
 /* responsive area  */
 
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 576px) {
     nav, nav > ul{
         flex-direction: column;
         margin-top: 20px;
@@ -331,7 +331,7 @@ footer{
 
 }
 
-@media screen and (min-width: 567px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     nav, nav > ul{
         flex-direction: column;
         margin-top: 20px;
