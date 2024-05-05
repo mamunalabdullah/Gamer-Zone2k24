@@ -159,6 +159,7 @@ nav li a i{
 .online-images{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
     padding: 10px 0;
 }
@@ -313,6 +314,55 @@ footer{
     }
     .instant-image, .anytime-image{
         width: 100%;
+    }
+    .anytime-image img, .instant-image img{
+        margin-left: 30px;
+    }
+    .badge{
+        width: 50%;
+    }
+    .careers{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .careers-content, .careers-image{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 567px) and (max-width: 992px) {
+    nav, nav > ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .banner{
+        background-image: none;
+    }
+    .banner-top{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .banner-top-content{
+        background-image: url('images/Group\ 14.png');
+        text-align: center;
+        padding: 20px;
+    }
+    .banner-bottom, .online-images, .instant{
+        flex-direction: column;
+    }
+    .anytime{
+        flex-direction: column-reverse;
+    }
+    .banner-bottom-content, .online, .instant-content, .anytime-content{
+        width: 100%;
+        text-align: center;
+    }
+    .instant-image, .anytime-image{
+        width: 100%;
+    }
+    .anytime-image img, .instant-image img{
+        margin-left: 30px;
     }
     .badge{
         width: 50%;
